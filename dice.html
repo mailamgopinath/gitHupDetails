@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SignUp Page</h1>
+        <form action="">
+            <input type="text" placeholder="Enter Your User Name" autofocus id="name" autocomplete="on" required><br></br>
+            <input type="password" placeholder="Enter Your Password" id="pass" required><br></br>
+            <input type="email" placeholder="Enter Your Email" id="email" required><br></br>
+            <input type="text" placeholder="Enter Your City" id="city" required><br></br>
+            <input type="tel" placeholder="Enter Your Mobile Number" id="tel" required><br></br>
+            <button onclick="handlesubmit()">Sign Up</button>
+        </form>
+    </div>
+        <script>
+            function handlesubmit(){
+                let name=document.getElementById('name').value;
+                let pass=document.getElementById('pass').value;
+                let email=document.getElementById('email').value;
+                let city=document.getElementById('city').value;
+                let tele=document.getElementById('tel').value;
+                if(name===" " || pass===" " || email===" " || city===" " || tele===" "){
+                    alert('Fill The All The Field');
+                }
+                else{
+                    localStorage.setItem('UserName',name);
+                    localStorage.setItem('password',pass);
+                    alert('The Form Is Submitted');
+                    window.location.href='./myDocument/varshitha.html';
+                }
+            }
+        </script>
+</body>
+</html>

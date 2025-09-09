@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: bisque;
+    }
+    nav h1{
+        font-size: 30px;
+        color: tomato;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    div{
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    div p{
+        color: darkblue;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    div p:hover{
+        color: brown;
+    }
+</style>
+<body>
+    <nav>
+        <h1>Amazon</h1>
+        <div>
+            <p>Home</p>
+            <p>Status</p>
+            <p>Contact</p>
+            <p>Items</p>
+        </div>
+    </nav>
+    <!-- <input type="text" placeholder="Enter Your User Name" id="login_user">
+    <input type="text" placeholder="Enter Your Password" id="pass_user">
+    <button onclick="handleShow()">Login</button>
+    <script>
+        function handleShow(){
+            let user=document.getElementById('login_user').value;
+            let pass=document.getElementById('pass_user').value;
+            let signupUser=localStorage.getItem('UserName')
+            let signupPass=localStorage.getItem('password')
+            if(user===signupUser && pass===signupPass){
+                alert('Login Successfull')
+                setTimeout(()=>{
+                    window.location.href='index.html';
+                },3000);
+            }
+            else{
+                alert('Login Fails');
+            }
+        }
+    </script> -->
+</body>
+</html>
